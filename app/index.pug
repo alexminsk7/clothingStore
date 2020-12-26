@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		title eleganceStore
+		link(rel="stylesheet", href="./css/style.min.css")
+		link(rel='preconnect' href='https://fonts.gstatic.com')
+		link(href='https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display&display=swap' rel='stylesheet')
+	body
+		.container
+			header.header
+				a.header__logo(href="/") Elegance
+				nav.header__nav
+					a.nav__link(href="#!") Collection
+					a.nav__link(href="#!") Men
+					a.nav__link(href="#!") Women
+					a.nav__link(href="#!") Blog
+					a.nav__link(href="#!") Faq
+				.header__cart
+					a.cart__link(href='#!')
+						picture.cart__img
+							source(srcset="./images/cart.svg" alt="cart")
+							img(src="./images/cart.png" alt="cart")
+						span.cart__num 3
+			main.main
+				.main__info
+					h1.main__title Women's Fashion
+					p.main__text At our store you will find a huge range of women’s fashion and accessories in sizes 6 to 32 with exclusive styles you won’t find on the high street.
+				.main__img

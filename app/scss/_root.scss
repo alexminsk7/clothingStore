@@ -1,0 +1,45 @@
+/* Set core root defaults */
+html {
+	box-sizing: border-box;
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	// font-family: 'Playfair Display', Operator Mono Lig, sans-serif;
+	font-family: 'Noto Sans', sans-serif;
+	color: $black;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	font: inherit;
+}
+
+img,
+picture {
+	width: 100%;
+	display: block;
+	height: auto;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+	filter: blur(10px);
+}
