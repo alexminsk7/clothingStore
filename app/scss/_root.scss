@@ -13,9 +13,16 @@ html {
 }
 
 body {
-	// font-family: 'Playfair Display', Operator Mono Lig, sans-serif;
 	font-family: 'Noto Sans', sans-serif;
 	color: $black;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	padding: 0;
 }
 
 ul,
@@ -42,4 +49,8 @@ picture {
 /* Blur images when they have no alt attribute */
 img:not([alt]) {
 	filter: blur(10px);
+}
+
+.none {
+	display: none !important;
 }

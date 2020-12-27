@@ -9,7 +9,7 @@ html(lang="en")
 		link(href='https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display&display=swap' rel='stylesheet')
 	body
 		.container
-			header.header
+			header.none.header
 				a.header__logo(href="/") Elegance
 				nav.header__nav
 					a.nav__link(href="#!") Collection
@@ -23,8 +23,77 @@ html(lang="en")
 							source(srcset="./images/cart.svg" alt="cart")
 							img(src="./images/cart.png" alt="cart")
 						span.cart__num 3
-			main.main
+			main.none.main
 				.main__info
-					h1.main__title Women's Fashion
-					p.main__text At our store you will find a huge range of women’s fashion and accessories in sizes 6 to 32 with exclusive styles you won’t find on the high street.
-				.main__img
+					.main__descr
+						h1.main__title Women's Fashion Collection
+						p.main__text At our store you will find a huge range of women’s fashion and accessories in sizes 6 to 32 with exclusive styles you won’t find on the high street.
+						button.btn.main__btn Shop now
+					.main__img
+						picture.main__img
+							source(srcset="./images/dress.jpg" alt="Women's Fashion")
+							img(src="./images/dress.jpg" alt="Women's Fashion")
+			section.section.collection
+				.collection__header
+					h2.title New Arrivals
+					.descr
+						p DISCOVER OUR WOMEN'S COLLECTION
+				.collection__inner
+					a.card__link(href="#!")
+						article.card.card__article
+							img.card__img(src="./images/item-1.jpg", alt="wear")
+							h4.card__title Featured Skirt
+							.card__price
+								span.card__price_old $100.00
+								span.card__price_new $95.00
+					a.card__link(href="#!")
+						article.card.card__article
+							img.card__img(src="./images/item-1.jpg", alt="wear")
+							h4.card__title Featured Skirt
+							.card__price
+								span.card__price_old $100.00
+								span.card__price_new $95.00
+					a.card__link(href="#!")
+						article.card.card__article
+							img.card__img(src="./images/item-1.jpg", alt="wear")
+							h4.card__title Featured Skirt
+							.card__price
+								span.card__price_old $100.00
+								span.card__price_new $95.00
+					a.card__link(href="#!")
+						article.card.card__article
+							img.card__img(src="./images/item-1.jpg", alt="wear")
+							h4.card__title Featured Skirt
+							.card__price
+								span.card__price_old $100.00
+								span.card__price_new $95.00
+					a.card__link(href="#!")
+						article.card.card__article
+							img.card__img(src="./images/item-1.jpg", alt="wear")
+							h4.card__title Featured Skirt
+							.card__price
+								span.card__price_old $100.00
+								span.card__price_new $95.00
+					a.card__link(href="#!")
+						article.card.card__article
+							img.card__img(src="./images/item-1.jpg", alt="wear")
+							h4.card__title Featured Skirt
+							.card__price
+								span.card__price_old $100.00
+								span.card__price_new $95.00
+					a.card__link(href="#!")
+						article.card.card__article
+							img.card__img(src="./images/item-1.jpg", alt="wear")
+							h4.card__title Featured Skirt
+							.card__price
+								span.card__price_old $100.00
+								span.card__price_new $95.00
+					a.card__link(href="#!")
+						article.card.card__article
+							img.card__img(src="./images/item-1.jpg", alt="wear")
+							h4.card__title Featured Skirt
+							.card__price
+								span.card__price_old $100.00
+								span.card__price_new $95.00
+					button.section__btn.collection__btn view all goods
+			section.section.info__section

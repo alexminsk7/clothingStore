@@ -1,44 +1,89 @@
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
-	padding: 0 15px;
+	padding: 0 1.5rem;
 	outline: 1px solid red;
 }
 
-.btn {
-	border: none;
-	padding: 8px 30px;
-	color: #fff;
-	background-color: #f72464;
-	box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
-	border-radius: 4px;
-	font-size: 2.6rem;
-	line-height: 35px;
+.section {
+	padding: 6rem 0;
+}
+
+.info__section {
+	background-color: cyan;
+}
+
+.title,
+.descr,
+.card__article,
+.btn,
+.section__btn {
 	text-align: center;
 }
 
 .title,
-.subtitle,
-.card__title {
-	text-align: center;
+.card__title,
+.btn,
+.section__btn {
+	font-family: 'Playfair Display', sans-serif;
+}
+
+.btn,
+.section__btn {
+	border-radius: 4px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.btn {
+	padding: 1rem 3rem 1.4rem;
+	color: #fff;
+	background-color: $red;
+	box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
+	border: none;
+	font-size: 2.6rem;
+	&:hover {
+		box-shadow: 5px 14px 30px rgba(82, 3, 27, 0.35);
+	}
+}
+
+.section__btn {
+	padding: 1rem 4rem 1.2rem;
+	color: $gray;
+	background-color: transparent;
+	border: 1px solid $red;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	line-height: 21px;
+	&:hover {
+		border-color: $red;
+		background-color: $red;
+		color: #fff;
+	}
 }
 
 .title {
 	font-size: 4.2rem;
 	line-height: 56px;
+	margin-bottom: 0.5rem;
 }
 
-.subtitle {
+.descr {
 	font-size: 1.4rem;
 	line-height: 19px;
+	margin-bottom: 4rem;
 	text-transform: uppercase;
 	color: $gray;
+}
+
+.card__article {
+	max-width: 27rem;
+	width: 100%;
 }
 
 .card__title {
 	font-size: 2rem;
 	line-height: 27px;
-}
-
-.advertising {
+	margin-bottom: 1.2rem;
+	font-weight: normal;
 }
