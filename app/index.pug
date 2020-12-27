@@ -9,7 +9,7 @@ html(lang="en")
 		link(href='https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display&display=swap' rel='stylesheet')
 	body
 		.container
-			header.none.header
+			header.header
 				a.header__logo(href="/") Elegance
 				nav.header__nav
 					a.nav__link(href="#!") Collection
@@ -23,7 +23,7 @@ html(lang="en")
 							source(srcset="./images/cart.svg" alt="cart")
 							img(src="./images/cart.png" alt="cart")
 						span.cart__num 3
-			main.none.main
+			main.main
 				.main__info
 					.main__descr
 						h1.main__title Women's Fashion Collection
@@ -97,3 +97,44 @@ html(lang="en")
 								span.card__price_new $95.00
 					button.section__btn.collection__btn view all goods
 			section.section.info__section
+				.info__inner
+					h2.title.info__title Get Something You Love
+					button.btn.info__btn Shop now
+			section.section.collection
+				.collection__header
+					h2.title Featured Goods
+					.descr
+						p DISCOVER OUR WOMEN'S COLLECTION
+				.collection__inner
+					a.card__link(href="#!")
+						article.card.card__article
+							img.card__img(src="./images/item-1.jpg", alt="wear")
+							h4.card__title Featured Skirt
+							.card__price
+								span.card__price_old $100.00
+								span.card__price_new $95.00
+					a.card__link(href="#!")
+						article.card.card__article
+							img.card__img(src="./images/item-1.jpg", alt="wear")
+							h4.card__title Featured Skirt
+							.card__price
+								span.card__price_old $100.00
+								span.card__price_new $95.00
+					a.card__link(href="#!")
+						article.card.card__article
+							img.card__img(src="./images/item-1.jpg", alt="wear")
+							h4.card__title Featured Skirt
+							.card__price
+								span.card__price_old $100.00
+								span.card__price_new $95.00
+					a.card__link(href="#!")
+						article.card.card__article
+							img.card__img(src="./images/item-1.jpg", alt="wear")
+							h4.card__title Featured Skirt
+							.card__price
+								span.card__price_old $100.00
+								span.card__price_new $95.00
+			section.section.info__section.info__section_dream
+				.info__inner
+					h2.title.info__title Our Dream Collection
+					button.btn.info__btn Shop now

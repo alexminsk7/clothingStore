@@ -2,7 +2,10 @@
 	max-width: 1170px;
 	margin: 0 auto;
 	padding: 0 1.5rem;
-	outline: 1px solid red;
+}
+
+.container__full {
+	max-width: 100vw;
 }
 
 .section {
@@ -10,7 +13,44 @@
 }
 
 .info__section {
-	background-color: cyan;
+	position: relative;
+	background: rgba(0, 0, 0, 0.75) url('../images/rectange-info.jpg') no-repeat
+		center / cover;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(0, 0, 0, 0.75);
+	}
+
+	.info__inner {
+		position: relative;
+		z-index: 1;
+		display: flex;
+		justify-content: space-between;
+		padding: 4rem;
+
+		.info__title {
+			text-align: start;
+			font-size: 52px;
+			color: #fff;
+		}
+
+		.info__btn {
+			&:hover {
+				color: #fff;
+				border: 1px solid $red;
+			}
+		}
+	}
+}
+
+.info__section_dream {
+	background: rgba(0, 0, 0, 0.75) url('../images/rectange-info-2.jpg') no-repeat
+		center / cover;
 }
 
 .title,
@@ -39,11 +79,11 @@
 	padding: 1rem 3rem 1.4rem;
 	color: #fff;
 	background-color: $red;
-	box-shadow: 0px 4px 15px rgba(123, 12, 46, 0.35);
-	border: none;
+	border: 1px solid $red;
 	font-size: 2.6rem;
 	&:hover {
-		box-shadow: 5px 14px 30px rgba(82, 3, 27, 0.35);
+		background-color: transparent;
+		color: $red;
 	}
 }
 
