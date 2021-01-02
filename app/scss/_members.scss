@@ -1,0 +1,35 @@
+.members {
+	.members__header {
+		.members__title {
+			margin-bottom: 2rem;
+		}
+
+		.members__descr {
+			max-width: 63rem;
+			width: 100%;
+			margin: 0 auto 3rem;
+			text-transform: none;
+			font-size: 1.6rem;
+		}
+	}
+
+	.members__form {
+		display: flex;
+		justify-content: center;
+		& * + * {
+			margin-left: 1rem;
+		}
+
+		.members__input {
+			max-width: 23rem;
+			width: 100%;
+			padding: 1rem;
+			border: 1px solid $red;
+			border-radius: 4px;
+			outline: $red;
+			line-height: 22px;
+			font-size: 1.6rem;
+			font-family: inherit;
+		}
+	}
+}

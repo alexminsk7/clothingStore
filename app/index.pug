@@ -9,7 +9,7 @@ html(lang="en")
 		link(href='https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display&display=swap' rel='stylesheet')
 	body
 		.container
-			header.none.header
+			header.header
 				a.header__logo(href="/") Elegance
 				nav.header__nav
 					a.nav__link(href="#!") Collection
@@ -24,7 +24,7 @@ html(lang="en")
 							img(src="./images/cart.png" alt="cart")
 						span.cart__num 3
 
-			main.none.main
+			main.main
 				.main__info
 					.main__descr
 						h1.main__title Women's Fashion Collection
@@ -35,7 +35,7 @@ html(lang="en")
 							source(srcset="./images/dress.jpg" alt="Women's Fashion")
 							img(src="./images/dress.jpg" alt="Women's Fashion")
 
-			section.none.section.collection
+			section.section.collection
 				.collection__header
 					h2.title New Arrivals
 					.descr
@@ -99,12 +99,12 @@ html(lang="en")
 								span.card__price_new $95.00
 					button.section__btn.collection__btn view all goods
 
-			section.none.section.info__section
+			section.section.info__section
 				.info__inner
 					h2.title.info__title Get Something You Love
 					button.btn.info__btn Shop now
 
-			section.none.section.collection
+			section.section.collection
 				.collection__header
 					h2.title Featured Goods
 					.descr
@@ -139,7 +139,7 @@ html(lang="en")
 								span.card__price_old $100.00
 								span.card__price_new $95.00
 
-			section.none.section.info__section.info__section_dream
+			section.section.info__section.info__section--dream
 				.info__inner
 					h2.title.info__title Our Dream Collection
 					button.btn.info__btn Shop now
@@ -191,7 +191,35 @@ html(lang="en")
 					button.section__btn.blog__btn read all posts
 
 			section.section.members
-				.blog__header
-					h2.title Blog Posts
-					.descr
-						p Editor’s picks
+				.members__header
+					h2.members__title.title Join 100,000 members already collaborating 
+					.members__descr.descr
+						p.members__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+				form.members__form.form(action="")
+					input.members__input(type="text", name="" placeholder="Your email address")
+					button.btn.btn--submit Subscribe
+
+		footer.footer
+			nav.footer__nav
+				a.footer__link(href="#!") Your account
+				a.footer__link(href="#!") Contact us
+				a.footer__link(href="#!") Terms of use
+			.footer__apps
+				a.footer__app(href="#!")
+					picture
+						source(srcset='' alt='')
+						img(src='./images/facebook.svg' alt='facebook')
+				a.footer__app(href="#!")
+					picture
+						source(srcset='' alt='')
+						img(src='./images/twitter.svg' alt='twitter')
+				a.footer__app(href="#!")
+					picture
+						source(srcset='' alt='')
+						img(src='./images/instagram.svg' alt='instagram')
+				a.footer__app(href="#!")
+					picture
+						source(srcset='' alt='')
+						img(src='./images/telegram.svg' alt='telegram')
+			.footer__copyright 
+				small © glitch.org
