@@ -64,7 +64,9 @@
 .title,
 .card__title,
 .btn,
-.section__btn {
+.section__btn,
+.content__title,
+.more {
 	font-family: 'Playfair Display', sans-serif;
 }
 
@@ -126,4 +128,10 @@
 	line-height: 27px;
 	margin-bottom: 1.2rem;
 	font-weight: normal;
+}
+
+.more {
+	font-weight: normal;
+	font-size: 1.6rem;
+	line-height: 2rem;
 }
